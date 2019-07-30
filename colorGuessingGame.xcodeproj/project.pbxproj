@@ -12,6 +12,7 @@
 		C6BEF28022F0FBC400297EDD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6BEF27E22F0FBC400297EDD /* Main.storyboard */; };
 		C6BEF28222F0FBC500297EDD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6BEF28122F0FBC500297EDD /* Assets.xcassets */; };
 		C6BEF28522F0FBC500297EDD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6BEF28322F0FBC500297EDD /* LaunchScreen.storyboard */; };
+		C6BEF29322F1073D00297EDD /*  ColorGuessingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6BEF29222F1073D00297EDD /*  ColorGuessingModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		C6BEF28122F0FBC500297EDD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C6BEF28422F0FBC500297EDD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C6BEF28622F0FBC500297EDD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C6BEF29222F1073D00297EDD /*  ColorGuessingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = " ColorGuessingModel.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +56,47 @@
 		C6BEF27922F0FBC400297EDD /* colorGuessingGame */ = {
 			isa = PBXGroup;
 			children = (
-				C6BEF27A22F0FBC400297EDD /* AppDelegate.swift */,
-				C6BEF27C22F0FBC400297EDD /* ViewController.swift */,
-				C6BEF27E22F0FBC400297EDD /* Main.storyboard */,
-				C6BEF28122F0FBC500297EDD /* Assets.xcassets */,
-				C6BEF28322F0FBC500297EDD /* LaunchScreen.storyboard */,
+				C6BEF29122F1072000297EDD /* Control */,
+				C6BEF29422F1074600297EDD /* Model */,
+				C6BEF29022F1071300297EDD /* View */,
+				C6BEF28E22F106C200297EDD /* supporting files */,
 				C6BEF28622F0FBC500297EDD /* Info.plist */,
 			);
 			path = colorGuessingGame;
+			sourceTree = "<group>";
+		};
+		C6BEF28E22F106C200297EDD /* supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				C6BEF28122F0FBC500297EDD /* Assets.xcassets */,
+				C6BEF27A22F0FBC400297EDD /* AppDelegate.swift */,
+				C6BEF28322F0FBC500297EDD /* LaunchScreen.storyboard */,
+			);
+			path = "supporting files";
+			sourceTree = "<group>";
+		};
+		C6BEF29022F1071300297EDD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C6BEF27E22F0FBC400297EDD /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C6BEF29122F1072000297EDD /* Control */ = {
+			isa = PBXGroup;
+			children = (
+				C6BEF27C22F0FBC400297EDD /* ViewController.swift */,
+			);
+			path = Control;
+			sourceTree = "<group>";
+		};
+		C6BEF29422F1074600297EDD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C6BEF29222F1073D00297EDD /*  ColorGuessingModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,6 +170,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6BEF29322F1073D00297EDD /*  ColorGuessingModel.swift in Sources */,
 				C6BEF27D22F0FBC400297EDD /* ViewController.swift in Sources */,
 				C6BEF27B22F0FBC400297EDD /* AppDelegate.swift in Sources */,
 			);
