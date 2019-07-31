@@ -1,38 +1,34 @@
-////
-////   ColorGuessingModel.swift
-////  colorGuessingGame
-////
-////  Created by Alyson Abril on 7/30/19.
-////  Copyright © 2019 Alyson Abril. All rights reserved.
-////
 //
-//import UIKit
+//   ColorGuessingModel.swift
+//  colorGuessingGame
 //
-//class ColorGuessingModel {
-//    // var randomCGNum = CGFloat.random(in: 0...1)
-//    
+//  Created by Alyson Abril on 7/30/19.
+//  Copyright © 2019 Alyson Abril. All rights reserved.
+//
+
+import UIKit
+
+//class ColorGuessingModel {    
 //    
 //    var randomCGNum = CGFloat.random(in: 0...1)
-//    var currentColor: UIColor
+//    var currentColor = UIColor.getNewColor()
 //    
-//    func getNewColor() -> UIColor {
-//        let randomColor = UIColor(red: randomCGNum, green: randomCGNum, blue: randomCGNum, alpha: 1)
-//        currentColor = randomColor
-//        return currentColor
-//    }
+//   
 //    
-//    init(currentColor: UIColor) {
-//        self.currentColor = currentColor
-//    }
+//   
 //    
 //    
 //}
-//var randomCGNum = CGFloat.random(in: 0...1)
-//let currentColor = UIColor(red: randomCGNum, green: randomCGNum, blue: randomCGNum, alpha: randomCGNum)
-////init() {
-////    let randomColor = ColorGuessingModel.randColor()
-////    let currentColor = randomColor.color
-////    let currentDominantColor = randomColor.dominantColor
-////    self.currentColor = currentColor
-////    self.currentDominantRGBColor = currentDominantColor
-////}
+
+extension UIColor {
+    static func getNewColor() -> UIColor {
+        // let randomCGNum = CGFloat.random(in: 0...1)
+        let red = CGFloat.random(in: 0...1)
+        let blue = CGFloat.random(in: 0...1)
+        let green = CGFloat.random(in: 0...1)
+        let randomColor = UIColor(displayP3Red: red, green: green, blue: blue, alpha: 1)
+        return randomColor
+    }
+}
+
+
