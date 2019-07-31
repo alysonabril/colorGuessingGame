@@ -7,15 +7,13 @@
 //
 
 import UIKit
-//var randomCGNum = CGFloat.random(in: 0...1)
-//var currentColor: UIColor
+
 
 func getNewColor() -> UIColor {
     let randomCGNum = CGFloat.random(in: 0...1)
-    let randomColor = UIColor(red: randomCGNum, green: randomCGNum, blue: randomCGNum, alpha: randomCGNum)
+    let randomColor = UIColor(red: randomCGNum, green: randomCGNum, blue: randomCGNum, alpha: 1)
     return randomColor
 }
-
 class ViewController: UIViewController {
     
     //elements that will be changing
@@ -41,6 +39,7 @@ class ViewController: UIViewController {
     }
 
     @IBAction func colorGuessedButtonPressed (_ sender: UIButton) {
+        //test to ensure color changing func in model works
         colorView.backgroundColor = getNewColor()
     }
     
