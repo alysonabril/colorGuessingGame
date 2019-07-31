@@ -7,6 +7,14 @@
 //
 
 import UIKit
+//var randomCGNum = CGFloat.random(in: 0...1)
+//var currentColor: UIColor
+
+func getNewColor() -> UIColor {
+    let randomCGNum = CGFloat.random(in: 0...1)
+    let randomColor = UIColor(red: randomCGNum, green: randomCGNum, blue: randomCGNum, alpha: randomCGNum)
+    return randomColor
+}
 
 class ViewController: UIViewController {
     
@@ -23,14 +31,17 @@ class ViewController: UIViewController {
     
     
     var testRGBArray: [UIColor] = [.red, .green, .blue]
+    
+
+   
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .black
-        colorView.backgroundColor = testRGBArray.randomElement()
+        colorView.backgroundColor = getNewColor()
     }
 
     @IBAction func colorGuessedButtonPressed (_ sender: UIButton) {
-        colorView.backgroundColor = testRGBArray.randomElement()
+        colorView.backgroundColor = getNewColor()
     }
     
     
