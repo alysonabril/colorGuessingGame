@@ -8,9 +8,9 @@
 
 import UIKit
 
-
-
 class ViewController: UIViewController {
+    
+    let model = ColorModel()
     
     //elements that will be changing
     
@@ -31,7 +31,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .black
-        colorView.backgroundColor = UIColor.getNewColor()
+        colorView.backgroundColor = model.colorObject.color
     }
     
     @IBAction func colorGuessedButtonPressed (_ sender: UIButton) {
