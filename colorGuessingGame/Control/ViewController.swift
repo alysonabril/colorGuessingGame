@@ -24,9 +24,6 @@ class ViewController: UIViewController {
     @IBOutlet weak var newGameLabel: UILabel!
     
     
-    //var testRGBArray: [UIColor] = [.red, .green, .blue]
-    
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
